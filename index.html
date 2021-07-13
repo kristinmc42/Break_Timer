@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style2.css">
+    <title>Kristin McCollum Project 1 - Javascript & Jquery</title>
+</head>
+<body>
+    <header>
+        <h1>Break Timer</h1>
+    </header>
+    <div class="layout maxWrapper">
+        <div class="buttonList wrapper">
+            <!-- this will stay at the left side of the screen -->
+            <ul>
+                <li>
+                    <button class="select">Select your break time</button>
+                    <ul class="breakButtonList">
+                        <li><button type="button" class ='break' name="length5min" value="5">5 min break</button></li>
+                        <li><button type="button" class ='break' name="length15min" value="15">15 min break</button></li>
+                        <li><button type="button" class ='break' name="length20min" value="20">20 min break</button></li>
+                        <li><button type="button" class ='break' name="length60min" value="60">Meal break (60 min)</button></li>
+                        <li><button type="button" class ='break' name="length90min" value="90">Meal break (90 min)</button></li>
+                        <li><button type="button" name="custom" class='custom' value="custom">Custom break time</button></li>
+                    </ul>
+                </li>
+            </ul>
+           
+        </div>
+        <div class="timerDisplay wrapper">
+            <!-- this will be where the timer displays -->
+            <div class="startMenu">
+                <!-- <h2 class="startMessage">Press the start button to start the break timer</h2> -->
+                <button type="button" id="start" >Start</button>
+            </div>
+            <div class="breakInfo">
+                <!-- <p class="breakLength"></p>
+                <p class="breakStart"></p>
+                <p class="breakEnd"></p> -->
+            </div>
+            <p class="timer">0:00</p>
+            <p class="warning"></p>
+            <button type="button" id="resetButton">Reset</button>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
