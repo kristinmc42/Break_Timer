@@ -28,6 +28,7 @@ h1 {
   position: fixed;
   top: 0;
   height: 12vh;
+  min-height: 2em;
   width: 100vw;
   border: 8px double rgb(5, 10, 22);
   color: rgb(5, 10, 22);
@@ -51,8 +52,8 @@ h1::after {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 88vh;
-  margin-top: 12vh;
+  min-height: 88vh;
+  margin-top: 20vh;
 }
 
 /* buttonList div */
@@ -64,6 +65,7 @@ h1::after {
   background-color: rgb(254, 239, 229); 
   padding-top: .8em;
   padding-bottom: .8em;
+ 
 }
 
 ul {
@@ -93,8 +95,10 @@ button:hover
 .timerDisplay {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  min-height: 22vh;
+  min-height: 60vh;
+  min-width: 0;
   width: 100vw;
   border: 5px solid rgb(5, 10, 22);
   background-color: rgb(254, 239, 229);
@@ -107,6 +111,7 @@ button:hover
 .breakInfo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -154,9 +159,11 @@ button:hover
 
 
 .timerDisplay p {
+  text-align: center;
   margin: 1vh;
   font-size: 1.7em; 
   color: rgb(5, 10, 22);
+  
 }
 
 .timerDisplay p.timer {
